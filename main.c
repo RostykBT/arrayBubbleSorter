@@ -15,7 +15,6 @@ int main(void){
 
     int array[N];
     int maxValue = 100;
-    inputType = 1;
 
     switch (inputType)
     {
@@ -28,6 +27,7 @@ int main(void){
     case 2:
     printf("Keyboard input:\n");
         for(i = 0; i < N; i++){
+            printf("Enter the %d. element:\n", i + 1);
             scanf("%d",&data);
             array[i] = data;
         }
